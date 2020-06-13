@@ -1,0 +1,23 @@
+
+
+
+@mixin boxShadow($x,$y,$b,$c) {
+    -webkit-box-shadow:$x $y $b $c;
+    -moz-box-shadow:$x $y $b $c;
+    -o-box-shadow:$x $y $b $c;
+    -ms-box-shadow:$x $y $b $c;
+    box-shadow:$x $y $b $c;
+}
+.movie{
+   @include boxShadow(0, 0, 10px,#09c )
+}
+.movie-info{
+    position: relative;
+}
+.avg{
+    position: absolute;
+    top:0;
+    right: 20px;
+    background-color: #09c;
+    padding:15px
+}
